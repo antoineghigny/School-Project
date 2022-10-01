@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pacman</title>
+</head>
+
+<body>
+    <div class="block">
+
+        <div class="header">
+            <h2 id="scoreText">HIGH SCORE</h2>
+            <h3 id="highScore"></h3>
+            <h3 id="scoreActuel">0</h3>
+        </div>
+        <div class="game">
+            
+            <div id="cadre"></div>
+        </div>
+        <div id="vie">
+            <!-- 
+            <span id="life" class="lifeRemaining" style="top: 0px; left:5px;"></span>
+            <span id="life" class="lifeRemaining" style="top: 0px; left: 25px;"></span>
+           -->
+        </div>
+    </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="data/maze.js"></script>
+<script src="script/model/Component.js"></script>
+<script src="script/model/Constantes.js"></script>
+<script src="script/model/Tile.js"></script>
+<script src="script/model/Dot.js"></script>
+<script src="script/model/Position.js"></script>
+<script src="script/model/Layer.js"></script>
+<script src="script/model/Wall.js"></script>
+<script src="script/model/Maze.js"></script>
+<script src="script/model/Game.js"></script>
+<script src="script/model/Sprite.js"></script>
+<script src="script/model/Direction.js"></script>
+<script src="script/model/Pacman.js"></script>
+<script src="script/model/Ghost.js"></script>
+
+<script src="script/controller/GameCtrl.js"></script>
+<script src="script/controller/PacmanCtrl.js"></script>
+
+<script src="script/view/GameView.js"></script>
+<script src="script/view/PacmanView.js"></script>
+
+<script>
+    $(function () {
+        let start = new GameCtrl();
+    })
+</script>
+
+</html>
