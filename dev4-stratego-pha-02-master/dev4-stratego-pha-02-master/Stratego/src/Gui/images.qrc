@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/allPawns/blue/1.png</file>
+        <file>images/allPawns/blue/2.png</file>
+        <file>images/allPawns/blue/3.png</file>
+        <file>images/allPawns/blue/4.png</file>
+        <file>images/allPawns/blue/5.png</file>
+        <file>images/allPawns/blue/6.png</file>
+        <file>images/allPawns/blue/7.png</file>
+        <file>images/allPawns/blue/8.png</file>
+        <file>images/allPawns/blue/9.png</file>
+        <file>images/allPawns/blue/10.png</file>
+        <file>images/allPawns/blue/11.png</file>
+        <file>images/lignes.png</file>
+        <file>images/allPawns/red/1.png</file>
+        <file>images/allPawns/red/2.png</file>
+        <file>images/allPawns/red/3.png</file>
+        <file>images/allPawns/red/4.png</file>
+        <file>images/allPawns/red/5.png</file>
+        <file>images/allPawns/red/6.png</file>
+        <file>images/allPawns/red/7.png</file>
+        <file>images/allPawns/red/8.png</file>
+        <file>images/allPawns/red/9.png</file>
+        <file>images/allPawns/red/10.png</file>
+        <file>images/allPawns/blue/0.png</file>
+        <file>images/allPawns/red/11.png</file>
+        <file>images/allPawns/red/0.png</file>
+        <file>images/allPawns/blue/12.png</file>
+        <file>images/allPawns/red/12.png</file>
+        <file>images/help.png</file>
+        <file>images/logo.png</file>
+    </qresource>
+</RCC>
