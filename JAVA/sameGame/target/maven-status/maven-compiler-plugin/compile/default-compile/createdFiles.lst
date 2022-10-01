@@ -1,0 +1,17 @@
+controller\Controller.class
+view\ScoreFX.class
+view\resizeBoardFX.class
+view\ButtonFX.class
+command\CommandManager.class
+controller\ControllerFX.class
+model\Color.class
+command\DeleteCommand.class
+model\Board.class
+model\FacadeInterface.class
+view\View.class
+model\GameState.class
+view\CommandFX.class
+command\CommandInterface.class
+model\Tile.class
+model\Game.class
+view\View$1.class
