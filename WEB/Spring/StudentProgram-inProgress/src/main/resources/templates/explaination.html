@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{navbar}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/output.css}" />
+</head>
+
+<body class="bg-slate-900">
+    <main layout:fragment="content">
+        <h1
+            class="md:pl-20 ml-5 pt-3 mb-4 text-2xl font-extrabold tracking-tight leading-none  md:text-2xl lg:text2xl text-white">
+            Explication du cours <mark class="px-2 text-white bg-blue-500 rounde" th:text="${coursId}"></mark> </h1>
+    </main>
+</body>
+
+</html>

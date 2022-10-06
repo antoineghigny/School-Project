@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{navbar}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/output.css}" />
+</head>
+
+<body class="bg-slate-900">
+    <main layout:fragment="content">
+        <div class="md:pl-20 md:pr-20">
+            <h1
+                class="ml-5 mt-4 mb-4 text-4xl font-extrabold tracking-tight leading-none  md:text-4xl lg:text-4xl text-white">
+                Programme annuel des <span
+                    class="underline underline-offset-3 decoration-8 decoration-blue-500">étudiants</span>
+            </h1>
+            <p class="ml-5 text-lg font-normal text-gray-400 lg:text-1xl">Bienvenue sur le site de gestion du
+                programme annuel des étudiants</p>
+            <div class=" overflow-x-auto relative shadow-md sm:rounded-lg">
+                <h2
+                    class="ml-5 pt-3 mb-4 text-2xl font-extrabold tracking-tight leading-none  md:text-2xl lg:text2xl text-white">
+                    Liste des <mark class="px-2 text-white bg-blue-500 rounded">groupes</mark> </h1>
+                    <table class="w-full text-sm text-left text-gray-400">
+                        <thead class="text-xs  uppercase bg-gray-700 text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6">Sigle</th>
+                                <th scope="col" class="py-3 px-6">Titre</th>
+                                <th scope="col" class="py-3 px-6">ECTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b bg-gray-800 border-gray-700" th:each="courses,iterStat : ${courses}">
+                                <td class="py-4 px-6">
+                                    <a class="py-4 px-6 hover:underline hover:text-gray-200"
+                                        th:text="${courses.getCours()}"
+                                        th:href="@{/course(coursId=${courses.getCours()})}"></a>
+                                </td>
+                                <td class="py-4 px-6">
+                                    <a class="py-4 px-6" th:text="${courses.getTitre()}">nom</a>
+                                </td>
+                                <td>
+                                    <a class="py-4 px-6" th:text="${courses.getEcts()}">nom</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+            <div class="ml-4 flex w-full pt-4">
+                <form th:action="@{/urlCtrl}" th:object="${course}" method="post">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" th:field="*{cours}" th:errorclass="errorField"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="cours"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Sigle</label>
+                        <span th:errors="*{cours}" class="errorMsg font-medium  text-red-500">erreur</span>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" th:field="*{titre}" th:errorclass="errorField"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="titre"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Titre</label>
+                        <span th:errors="*{titre}" class="errorMsg font-medium  text-red-500">erreur</span>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="number" th:field="*{ects}" th:errorclass="errorField" name="repeat_password"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="ects"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ects</label>
+                        <span th:errors="*{ects}" class="errorMsg font-medium  text-red-500 ">erreur</span>
+                    </div>
+                    <button type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
