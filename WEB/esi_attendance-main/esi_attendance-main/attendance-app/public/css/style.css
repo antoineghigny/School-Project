@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h5, h6 {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0
+}
+
+table {
+    width: 100%
+}
+
+thead th,
+tfoot tr {
+    position: sticky;
+    color: white;
+    background-color: #474747;
+}
+
+thead th {
+    top: 0
+}
+
+tfoot tr {
+    bottom: 0
+}
+
+th,
+td {
+    text-align: center
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+.field{
+    min-height: 40px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    text-align: center;
+    outline: none;
+}
+
+.fieldArea{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+button{
+    min-height: 40px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+body, button, input {
+    font: 1em Hind, sans-serif;
+    line-height: 1.5em;
+}
+body, input {
+    color: #171717;
+}
+
+#titleGroup{
+    margin-right: 15px;
+}
+
+.groupSearch{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin: 15px;
+}
+
+.delBut{
+    color: white;
+    background-color: tomato;
+    border: none;
+    outline: none;
+}
+
+.delBut:active{
+    background-color: #f5735a;
+}
+
+#validate{
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background-color: #474747;
+    box-shadow: 0px 1px rgb(114, 114, 114);
+    border: none;
+    outline: none;}
+
+#validate:active{
+    background-color: #595858;
+}
