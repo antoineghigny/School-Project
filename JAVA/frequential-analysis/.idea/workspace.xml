@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8076836d-82d8-4b21-826e-ce1ff9783f3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/td1/src/main/java/view/Preprocess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/td1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/td1/src/main/java/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/td1/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/src/main/java/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/td1/src/main/java/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/td1/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/td1/target/classes/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td1/target/classes/model/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/td1/target/classes/model/Model.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="26jXPVkTWq7jWyMLAJHtfOunOOM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8076836d-82d8-4b21-826e-ce1ff9783f3c" name="Changes" comment="" />
+      <created>1647937944870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647937944870</updated>
+      <workItem from="1647937947177" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

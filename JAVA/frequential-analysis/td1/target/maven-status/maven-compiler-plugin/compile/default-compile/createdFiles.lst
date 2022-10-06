@@ -1,0 +1,9 @@
+model\Model.class
+controller\Controller.class
+command\Cypher.class
+view\View.class
+command\Crack.class
+command\Decypher.class
+command\Command.class
+main\Main.class
+factory\Factory.class
