@@ -1,0 +1,34 @@
+{% extends "_base.html" %} {% block title %} Détail - {{ developer.first_name }}
+{{ developer.last_name }} {% endblock title %} {% block content %}
+<div class="mt-4 p-5 bg-white rounded">
+  <form action="{% url 'developer:delete' developer.id %}" method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-light btn-sm">
+      <i class="fa fa-trash"></i>
+    </button>
+  </form>
+  <h1>{{ developer.first_name }} {{ developer.last_name }}</h1>
+  <p>
+    {{ developer.tasks.all|length }}
+    tâche{{developer.tasks.all|length|pluralize}}
+    assignée{{developer.tasks.all|length|pluralize}}.
+  </p>
+</div>
+
+<div class="container-sm">
+  {% if not developer.is_free %}
+  <ul class="list-group">
+    {% for task in developer.tasks.all %}
+    <li class="list-group-item">
+      <strong>{{ task.title }}!</strong> {{ task.description }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="alert alert-danger">
+    Aucune tâche n'est assignée à {{ developer.first_name }}.
+  </div>
+  {% endif %}
+</div>
+
+{% endblock content %}
